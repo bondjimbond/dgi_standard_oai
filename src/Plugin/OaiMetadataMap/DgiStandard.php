@@ -37,6 +37,7 @@ class DgiStandard extends OaiMetadataMapBase implements ContainerFactoryPluginIn
    * @var string[]
    */
   protected const FIELD_MAPPING = [
+    'title' => self::TITLE_ELEMENT_MAIN,
     'field_member_of' => 'dcterms:isPartOf',
     'field_resource_type' => 'dcterms:type',
     'field_table_of_contents' => 'dcterms:description',
