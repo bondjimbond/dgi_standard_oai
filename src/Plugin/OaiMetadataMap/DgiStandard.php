@@ -422,6 +422,8 @@ class DgiStandard extends OaiMetadataMapBase implements ContainerFactoryPluginIn
     if (static::THUMBNAIL_ELEMENT) {
       $this->addThumbnail($entity, static::THUMBNAIL_ELEMENT);
     }
+    // Fallback to the label if no title.
+    $this->addFallbackTitle($entity);
   }
 
   /**
@@ -649,6 +651,18 @@ class DgiStandard extends OaiMetadataMapBase implements ContainerFactoryPluginIn
    */
   protected function isParagraphField($paragraph_name) {
     return isset($this->paragraphMapping[$paragraph_name]);
+  }
+
+  /**
+   * Ensures a title is set if one hasn't been added.
+   *
+   * * @param \Drupal\Core\Entity\ContentEntityInterface $entity
+   * *   The entity being rendered.
+   */
+  protected function addFallbackTitle(ContentEntityInterface $entity): void {
+    if (!isset($this->elements[static::TITLE_ELEMENT_MAIN])) {
+      $this->elements[static::TITLE_ELEMENT_MAIN] = (string) $entity->label();
+    }
   }
 
 }
