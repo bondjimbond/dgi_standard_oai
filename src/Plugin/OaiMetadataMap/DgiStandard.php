@@ -41,6 +41,7 @@ class DgiStandard extends OaiMetadataMapBase implements ContainerFactoryPluginIn
     'field_resource_type' => 'dcterms:type',
     'field_table_of_contents' => 'dcterms:description',
     'field_description' => 'dcterms:description',
+    'field_abstract' => 'dcterms:description',
     'field_language' => 'dc:language',
     'field_target_audience' => 'dcterms:educationLevel',
     'field_local_identifier' => 'dcterms:identifier',
