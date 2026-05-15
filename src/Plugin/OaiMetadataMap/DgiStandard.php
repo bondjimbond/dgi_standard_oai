@@ -117,11 +117,13 @@ class DgiStandard extends OaiMetadataMapBase implements ContainerFactoryPluginIn
     'relators:cmp' => 'dcterms:creator',
     'relators:cnd' => 'dcterms:contributor',
     'relators:ctb' => 'dcterms:contributor',
+    'relators:cur' => 'dcterms:contributor',
     'relators:crp' => 'dcterms:contributor',
     'relators:cre' => 'dcterms:creator',
     'relators:dpc' => 'dcterms:contributor',
     'relators:drt' => 'dcterms:contributor',
     'relators:edt' => 'dcterms:contributor',
+    'relators:hst' => 'dcterms:contributor',
     'relators:ive' => 'dcterms:creator',
     'relators:ivr' => 'dcterms:contributor',
     'relators:prf' => 'dcterms:contributor',
@@ -131,6 +133,7 @@ class DgiStandard extends OaiMetadataMapBase implements ContainerFactoryPluginIn
     'relators:sgn' => 'dcterms:contributor',
     'relators:spk' => 'dcterms:contributor',
     'relators:spn' => 'dcterms:contributor',
+    'relators:ths' => 'dcterms:contributor',
     'relators:vdg' => 'dcterms:contributor',
   ];
 
