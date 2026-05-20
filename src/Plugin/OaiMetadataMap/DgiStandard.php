@@ -112,6 +112,7 @@ class DgiStandard extends OaiMetadataMapBase implements ContainerFactoryPluginIn
    * @var string[]
    */
   protected const LINKED_AGENT_MAPPING = [
+    'relators:art' => 'dcterms:creator',
     'relators:aut' => 'dcterms:creator',
     'relators:ato' => 'dcterms:contributor',
     'relators:cmp' => 'dcterms:creator',
@@ -122,11 +123,13 @@ class DgiStandard extends OaiMetadataMapBase implements ContainerFactoryPluginIn
     'relators:cre' => 'dcterms:creator',
     'relators:dpc' => 'dcterms:contributor',
     'relators:drt' => 'dcterms:contributor',
+    'relators:dsr' => 'dcterms:creator',
     'relators:edt' => 'dcterms:contributor',
     'relators:hst' => 'dcterms:contributor',
     'relators:ive' => 'dcterms:creator',
     'relators:ivr' => 'dcterms:contributor',
     'relators:prf' => 'dcterms:contributor',
+    'relators:pre' => 'dcterms:contributor',
     'relators:pht' => 'dcterms:creator',
     'relators:cph' => 'dcterms:rightsHolder',
     'relators:pbl' => 'dcterms:contributor',
