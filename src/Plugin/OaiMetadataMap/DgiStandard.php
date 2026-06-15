@@ -56,6 +56,8 @@ class DgiStandard extends OaiMetadataMapBase implements ContainerFactoryPluginIn
     'field_subject' => 'dcterms:subject',
     'field_temporal_subject' => 'dcterms:temporal',
     'field_geographic_subject' => 'dcterms:spatial',
+    'field_publication_title' => 'dcterms:source',
+    'field_publication_number' => 'dcterms:source',
     'field_coordinates' => 'dcterms:spatial',
     'field_geographic_code' => 'dcterms:spatial',
     'field_lcc_classification' => 'dcterms:subject',
